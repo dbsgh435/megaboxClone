@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메가박스(클론코딩)</title>
+    <script src="https://kit.fontawesome.com/1477567a32.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1477567a32.js" crossorigin="anonymous"></script>
+    <script src="script/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <h1 class="blind">메가박스</h1>
+    <div class="modal modal_login blind">
+        <div class="popup">
+            <div><p>알림</p><p>X</p></div>
+            <div class="modal-text"></div>
+            <button>확인</button>
+        </div>
+    </div>
+    <div class="ad">
+        <div class="ad-img">
+            <img src="images/header-ad.jpg" alt="현대해상 다이렉트">
+        </div>
+        <div class="ad-close">
+            <a href="#">&times;</a>
+        </div>
+    </div>
+    <header>
+        <div class="header-wrap">
+            <div id="headerMain">
+                <div id="mainLeft">
+                    <ul class="member-left">
+                        <li><a href="#">VIP LOUNGE</a></li>
+                        <li><a href="#">멤버십</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <ul class="icon-left">
+                        <li><a href="#"><img src="images/ico-sitemap-white.png" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="images/ico-search-white.png" alt="검색"></a></li>
+                    </ul>
+                    <div class="nav">
+                        <ul id="gnbLeft">
+                            <li><a href="#">영화</a></li>
+                            <li><a href="#">예매</a></li>
+                            <li><a href="#">극장</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/megabox-logo__white.png" alt="메가박스 로고">
+                    </a>
+                </div>
+                <div id="mainRight">
+                    <ul class="member-right">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">빠른예매</a></li>
+                    </ul>
+                    <div class="nav">
+                        <ul id="gnbRight">
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">스토어</a></li>
+                            <li><a href="#">혜택</a></li>
+                        </ul>
+                    </div>
+                    <ul class="icon-right">
+                        <li><a href="#"><img src="images/ico-schedule-white.png" alt="메뉴"></a></li>
+                        <li><a href="#"><img src="images/ico-mymega-white.png" alt="검색"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-contents__wrap">
+            <div class="header-main__bg"></div>
+            <div class="header-contents">
+                <div class="contents-title">
+                    <p>박스오피스</p>
+                    <p>더 많은 영화보기+</p>
+                </div>
+                <div class="contents-poster">
+                    <div class="poster-column">
+                        <div class="movie-poster">
+                            <div class="hover-bg opacity">
+                                <p>
+                                    아직 만난적 없는 너를 찾고 있어<br><br>
+                                    천년만에 다가오는 혜성 기적이 시작된다<br>
+                                    도쿄에 사는 소년'타키'와 시골
+                                </p>
+                                <div>
+                                  <h3>관람평</h3>
+                                  <span>8.8</span>
+                                </div>
+                            </div>
+                            <i>1</i>
+                            <div><img src="images/dolby.png" alt="포스터 옵션 이미지"></div>
+                            <div><img src="images/mx.png" alt="포스터 옵션 이미지"></div>
+                        </div>
+                        <div class="movie-button">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>3.9k</p>
+                            </a>
+                            <a href="#">예매</a>
+                        </div>
+                    </div>
+                    <div class="poster-column">
+                        <div class="movie-poster">
+                            <div class="hover-bg opacity">
+                                <p>
+                                    '텐 링즈'를 차지하는 자, 세상을 지배한다!<br><br>
+                                     초인적인 능력을 가진 '텐 링<br>
+                                     즈'의 힘으로 수세기 동안 어둠의 세상을 지배해 온 '웬우'<br>
+                                     '샹치'는 아버지 '웬우' 밑에서 암
+                                </p>
+                                <div>
+                                    <h3>관람평</h3>
+                                    <span>8.3</span>
+                                </div>
+                            </div>
+                            <i>2</i>
+                            <div><img src="images/dolby.png" alt="포스터 옵션 이미지"></div>
+                            <div><img src="images/mx.png" alt="포스터 옵션 이미지"></div>
+                        </div>
+                        <div class="movie-button">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>691</p>
+                            </a>
+                            <a>예매</a>
+                        </div>
+                    </div>
+                    <div class="poster-column">
+                        <div class="movie-poster">
+                            <div class="hover-bg opacity">
+                                <p>
+                                    오갈 수 있는길은 기찻길밖에 없지만<br>
+                                    정작 기차역은 없는 마을.<br>
+                                    오늘부로 청와대에 딱 54번째 편<br>
+                                    지를 보낸 '준경'(박정민)의 목표는 단 하나!<br>
+                                    바로 마을에 기차역이 생기는 것
+                                </p>
+                                <div>
+                                    <h3>관람평</h3>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <i>3</i>
+                            <div><img src="images/dolby.png" alt="포스터 옵션 이미지"></div>
+                            <div><img src="images/mx.png" alt="포스터 옵션 이미지"></div>
+                        </div>
+                        <div class="movie-button">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>689</p>
+                            </a>
+                            <a>예매</a>
+                        </div>
+                    </div>
+                    <div class="poster-column">
+                        <div class="movie-poster">
+                            <div class="hover-bg opacity">
+                                <p>
+                                    배우 황정민이 '인질'로 잡혔다!<br><br>
+                                    평소오 똑같던 어느 새벽,<br>
+                                    서울 한복판에서 증거도, 목격자<br>
+                                    도 없는 대한민국 톱배우 '횡정<br>
+                                    민'이 납치된다.
+                                </p>
+                                <div>
+                                    <h3>관람평</h3>
+                                    <span>8.6</span>
+                                </div>
+                            </div>
+                            <i>4</i>
+                            <div><img src="images/dolby.png" alt="포스터 옵션 이미지"></div>
+                            <div><img src="images/mx.png" alt="포스터 옵션 이미지"></div>
+                        </div>
+                        <div class="movie-button">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>249</p>
+                            </a>
+                            <a>예매</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-nav__box">
+                    <div>
+                        <input class="search-input" type="text" placeholder=" 영화명을 입력해주세요">
+                        <a href="#"><img class="search" src="images/ico-search-white.png" alt="돋보기 아이콘"></a>
+                    </div>
+                    <a href="#">
+                        <img src="images/ico-schedule-main.png" alt="상영시간표">
+                        상영시간표
+                    </a>
+                    <a href="#">
+                        <img src="images/ico-boxoffice-main.png" alt="박스 오피스">
+                        박스오피스
+                    </a>
+                    <a href="#">
+                        <img src="images/ico-quick-reserve-main.png" alt="빠른예매">
+                        빠른예매
+                    </a>
+                </div>
+                <div class="mouse">
+                    <img src="images/ico-mouse.png" alt="마우스 이미지">
+                </div>
+            </div>
+            <article>
+                <div class="benefit-wrap">
+                     <h3>혜택 <span id="benefit">&plus;</span></h3>
+                     <div class="fit-box">
+                        <div class="fit-left">
+                            <div id="carousel">
+                                <div id="slide-text">
+                                    <ul>
+                                        <li><img src="images/slide1_text.jpg" alt="슬라이드 텍스트"></li>
+                                        <!-- <li><img src="images/slide2_text.jpg" alt="슬라이드 텍스트"></li>
+                                        <li><img src="images/slide3_text.jpg" alt="슬라이드 텍스트"></li> -->
+                                    </ul>
+                                </div>
+                                <div id="slide-img">
+                                    <ul>
+                                        <li><img src="images/slide1_img.jpg" alt="슬라이드 이미지"></li>
+                                        <!-- <li><img src="images/slide2_img.jpg" alt="슬라이드 이미지"></li>
+                                        <li><img src="images/slide3_img.jpg" alt="슬라이드 이미지"></li> -->
+                                    </ul>
+                                </div>
+                                <div id="control">
+                                    <ul class="pager">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li class="on">3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                    </ul>
+                                    <div class="btns">
+                                        <button><i class="fas fa-chevron-left"></i></button>
+                                        <button><i class="fas fa-chevron-right"></i></button>
+                                        <button><i class="fas fa-pause"></i></button>
+                                    </div>
+                                    <div class="nums">1/9</div>
+                                </div>
+                            </div>
+                            <ul id="campaign">
+                                <li>
+                                    <!-- ---------------------------------이벤트 랜덤 구현---------------------------------------- -->
+                                    <!-- <script>
+                                            let ranNum = Math.ceil(Math.random()*7);
+                                            document.write("<img src=\"images/event1-" + ranNum + ".jpg\" alt=\"신규/휴먼 계정 이벤트\">");
+                                        --------------------------자바스크립 구현--------------------------------------------------------------
+
+                                        // for(let i=1; i<=10; i++) {
+                                        //     ranNum = Math.random();
+                                        //     ranNum = Math.floor(ranNum * 3);
+                                        // }
+                                    </script> -->
+                                    <!-- <img src="images/event1.jpg" alt="신규/휴먼 계정 이벤트"> -->
+                                </li>
+                                <li><img src="images/event2.jpg" alt="페이코x메가박스 쿠폰"></li>
+                            </ul>
+                        </div>
+                        <div class="fit-right">
+                            <a href="#">
+                                <img src="images/bannerMovie.jpg" alt="상견니">
+                            </a>
+                        </div>
+                     </div>
+                </div>
+                <div class="ico-benefit">
+                    <ul>
+                        <li>
+                            <figure>
+                                <img src="images/icon-jewel.png" alt="vip lounge">
+                                <figcaption>VIP LOUNGE</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/icon-people.png" alt="멤버십">
+                                <figcaption>멤버십</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/icon-card.png" alt="할인카드안내">
+                                <figcaption>할인카드안내</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/icon-present.png" alt="이벤트">
+                                <figcaption>이벤트</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="images/icon-store.png" alt="스토어">
+                                <figcaption>스토어</figcaption>
+                            </figure>
+                        </li>
+                  </ul>
+                </div>
+            </article>
+        </div>
+    </header>
+    <div class="quration">
+        <div class="quration-wrap">
+            <h3>큐레이션<span>큐레이션 더보기+</span></h3>
+            <div class="quration-left">
+                <div class="image-box">
+                    <img src="images/Classic-text.png" alt="큐레이션 메인 클립 이미지">
+                    <img src="images/regoleto.jpg" alt="큐레이션 메인 이미지">
+                </div>
+                <div class="quration-button">
+                    <div>상세정보</div>
+                    <div>예매</div>
+                </div>
+            </div>
+            <div class="quration-right">
+                <div class="quration-title">
+                    <P>#클래식소사이어티</P>
+                    <h2>[필름오페라 앙코르] 리골레토</h2>
+                </div>
+                <div class="quration-title_sub">
+                    <p>
+                        [상영 정보]<br><br>
+                        - 상영 지점 : 코엑스, 센트럴, 목동, 킨텍스, 분당, 성수<br>
+                        - 러닝 타임 : 122분 * 인터미션 없음<br>
+                        - 상영 일정 : 2021년 8월 18일(수) ~ 2021년 9월 29일(수) / 수 19:00 (목동, 킨텍스, 센트럴 14:00), 일 14:00 상영<br>
+                        *8/22(일)은 '2021 잘츠부르크 페스티벌' 라이브 중계 관계로 상영이 없습니다.<br>
+                        - 티켓 가격 : 일반 25,000원, 청소년/우대 20,000원<br>
+                        *티켓 가격은 상영관 타입에 따라 상이할 수 있습니다.
+                    </p>
+                </div>
+                <div class="quration-poster">
+                    <div class="quration-poster_column">
+                        <img src="images/big-f.png" alt="포스터 클립 이미지">
+                        <img src="images/q-goodpeople.jpg" alt="큐레이션 서브 이미지">
+                        <p>좋은 사람</p>
+                    </div>
+                    <div class="quration-poster_column">
+                        <img src="images/big-f.png" alt="포스터 클립 이미지">
+                        <img src="images/q-coda.jpg" alt="큐레이션 서브 이미지">
+                        <p>코다</p>
+                    </div>
+                    <div class="quration-poster_column">
+                        <img src="images/big-f.png" alt="포스터 클립 이미지">
+                        <img src="images/q-tove.jpg" alt="큐레이션 서브 이미지">
+                        <p>토베 얀손</p>
+                    </div>
+                    <div class="quration-poster_column">
+                        <img src="images/big-c.png" alt="포스터 클립 이미지">
+                        <img src="images/q-madam.jpg" alt="큐레이션 서브 이미지">
+                        <p>[오페라] 마담 버터플라이&middot;&middot;&middot;</p>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="guide">
+        <h2>메가박스 안내</h2>
+        <div class="guide-img">
+            <a href="#">
+                <img src="images/guide-img_1.png" alt="가이드 이미지">
+            </a>
+            <a href="#">
+                <img src="images/guide-img-2.png" alt="가이드 이미지">
+            </a>
+            <a href="#">
+                <img src="images/guide-img-3.png" alt="가이드 이미지">
+            </a>
+            <a href="#">
+                <img src="images/guide-img-4.png" alt="가이드 이미지">
+            </a>
+            <a href="#">
+                <img src="images/guide-img-5.png" alt="가이드 이미지">
+            </a>
+            <a href="#">
+                <img src="images/guide-img-6.png" alt="가이드 이미지">
+            </a>
+        </div>
+    </div>
+    <div class="notice">
+        <div class="notice-wrap">
+            <p>메가박스</p>
+            <p><a href="#"><span>[공지]</span>&lt;가을 아침, 영화 한 잔&gt;이벤트 일부 영화 적용 불가 안내</a></p>
+            <p>2021.09.14</p>
+            <p><a href="#">더보기 <i class="fas fa-chevron-right"></i></a></p>
+        </div>
+    </div>
+    <div class="customer">
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/guide-icn_1.png" alt="고객센터">
+                    <figcaption>고객센터</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/guide-icn_2.png" alt="자주 묻는 질문">
+                    <figcaption>자주 묻는 질문</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/guide-icn_3.png" alt="1:1 문의">
+                    <figcaption>1:1 문의</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/guide-icn_4.png" alt="단체/대관문의">
+                    <figcaption>단체/대관문의</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/guide-icn_5.png" alt="분실물 문의/접수">
+                    <figcaption>분실물 문의/접수</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/guide-icn_6.png" alt="더 부티크 프라이빗 대관예매">
+                    <figcaption>더 부티크 프라이빗<br>대관예매</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+    <div class="f-ad">
+        <img src="images/footer-ad.jpg" alt="하단 광고">
+    </div>
+    <footer>
+        <div class="footer-top">
+            <ul class="fmenu">
+                <li>회사소개</li>
+                <li>인재채용</li>
+                <li>사회공헌</li>
+                <li>제휴/광고/부대사업문의</li>
+                <li>이용약관</li>
+                <li><span>개인정보처리방침</span></li>
+                <li>윤리경영</li>
+            </ul>
+            <button><img src="images/ico-search-white.png" alt="검색">극장찾기</button>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <img src="images/flogo.png" alt="메가박스 하단로고">
+                <p>
+                    서울특별시 마포구 월드컵로 240, 지상2층(성산동, 월드컵주경기장) ARS 1544-0070<br>
+                    대표자명 김진선 · 개인정보보호책임자 조상연 · 사업자등록번호 211-86-59478 · 통신판매업신고번호 제 833호<br>
+                    COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+                </p>
+            </div>
+            <div class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/sns1.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/sns2.png" alt="페이스북"></a></li>
+                    <li><a href="#"><img src="images/sns3.png" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="images/sns4.png" alt="구글"></a></li>
+                    <li><a href="#"><img src="images/sns5.png" alt="앱스토어"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script/main.js"></scrip>
+</body>
+</html>
